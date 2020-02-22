@@ -1,0 +1,7 @@
+.idea
+Report.docx
+lab1-client/target
+lab1-j2ee/target
+lab1-standalone/target
+# Project exclude paths
+/target/
