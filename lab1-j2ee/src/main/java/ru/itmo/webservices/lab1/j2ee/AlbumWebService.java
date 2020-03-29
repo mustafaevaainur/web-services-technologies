@@ -18,10 +18,10 @@ public class AlbumWebService {
 
     @WebMethod
     public List<Album> getAlbums(@WebParam(name = "singerId") String singerId,
-                                     @WebParam(name = "songsCount") Long songsCount,
-                                     @WebParam(name = "albumName") String albumName,
-                                     @WebParam(name = "genre") String genre,
-                                     @WebParam(name = "dateAdded") Long dateAdded) {
+                                 @WebParam(name = "songsCount") Long songsCount,
+                                 @WebParam(name = "albumName") String albumName,
+                                 @WebParam(name = "genre") String genre,
+                                 @WebParam(name = "dateAdded") Long dateAdded) {
         AlbumsDao dao = new AlbumsDao(getConnection());
         return dao.getAlbums(singerId, songsCount, albumName, genre, dateAdded);
     }
