@@ -9,9 +9,16 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>lab1-standalone</module>
+        <module>lab1/lab1-client</module>
+        <module>lab1/lab1-standalone</module>
         <module>lab1-j2ee</module>
-        <module>lab1-client</module>
+        <module>lab2</module>
+        <module>lab3</module>
+        <module>lab4</module>
+        <module>lab4j2ee</module>
+        <module>lab5</module>
+        <module>lab6</module>
+        <module>lab7</module>
     </modules>
 
     <properties>

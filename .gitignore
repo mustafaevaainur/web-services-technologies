@@ -1,7 +1,11 @@
 .idea
 Report.docx
-lab1-client/target
-lab1-j2ee/target
-lab1-standalone/target
+firstlab-client/target
+firstlab-j2ee/target
+firstlab-standalone/target
 # Project exclude paths
-/target/
+/lab4/target/
+/lab4j2ee/target/
+/lab5/target/
+/lab6/target/
+/lab7/target/
