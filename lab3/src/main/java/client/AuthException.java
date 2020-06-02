@@ -10,7 +10,7 @@ import javax.xml.ws.WebFault;
  * Generated source version: 2.2
  * 
  */
-@WebFault(name = "AuthException", targetNamespace = "http://service.wstlabs.com/")
+@WebFault(name = "AuthException", targetNamespace = "http://service/")
 public class AuthException
     extends Exception
 {

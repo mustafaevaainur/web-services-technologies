@@ -10,7 +10,7 @@ import javax.xml.ws.WebFault;
  * Generated source version: 2.2
  * 
  */
-@WebFault(name = "InsertingException", targetNamespace = "http://service.wstlabs.com/")
+@WebFault(name = "InsertingException", targetNamespace = "http://service/")
 public class InsertingException
     extends Exception
 {

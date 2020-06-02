@@ -24,22 +24,22 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _GetAllPicturesResponse_QNAME = new QName("http://service.wstlabs.com/", "getAllPicturesResponse");
-    private final static QName _FindPicturesResponse_QNAME = new QName("http://service.wstlabs.com/", "findPicturesResponse");
-    private final static QName _IllegalQException_QNAME = new QName("http://service.wstlabs.com/", "IllegalQException");
-    private final static QName _InvalidCreatingParametersException_QNAME = new QName("http://service.wstlabs.com/", "InvalidCreatingParametersException");
-    private final static QName _CreatePictureResponse_QNAME = new QName("http://service.wstlabs.com/", "createPictureResponse");
-    private final static QName _DeletePictureResponse_QNAME = new QName("http://service.wstlabs.com/", "deletePictureResponse");
-    private final static QName _UpdatePictureResponse_QNAME = new QName("http://service.wstlabs.com/", "updatePictureResponse");
-    private final static QName _FindPictures_QNAME = new QName("http://service.wstlabs.com/", "findPictures");
-    private final static QName _CreatePicture_QNAME = new QName("http://service.wstlabs.com/", "createPicture");
-    private final static QName _UpdatePicture_QNAME = new QName("http://service.wstlabs.com/", "updatePicture");
-    private final static QName _InvalidEntityException_QNAME = new QName("http://service.wstlabs.com/", "InvalidEntityException");
-    private final static QName _GetAllPictures_QNAME = new QName("http://service.wstlabs.com/", "getAllPictures");
-    private final static QName _AuthException_QNAME = new QName("http://service.wstlabs.com/", "AuthException");
-    private final static QName _DeletePicture_QNAME = new QName("http://service.wstlabs.com/", "deletePicture");
-    private final static QName _IllegalIdException_QNAME = new QName("http://service.wstlabs.com/", "IllegalIdException");
-    private final static QName _InsertingException_QNAME = new QName("http://service.wstlabs.com/", "InsertingException");
+    private final static QName _GetAllPicturesResponse_QNAME = new QName("http://service/", "getAllPicturesResponse");
+    private final static QName _FindPicturesResponse_QNAME = new QName("http://service/", "findPicturesResponse");
+    private final static QName _IllegalQException_QNAME = new QName("http://service/", "IllegalQException");
+    private final static QName _InvalidCreatingParametersException_QNAME = new QName("http://service/", "InvalidCreatingParametersException");
+    private final static QName _CreatePictureResponse_QNAME = new QName("http://service/", "createPictureResponse");
+    private final static QName _DeletePictureResponse_QNAME = new QName("http://service/", "deletePictureResponse");
+    private final static QName _UpdatePictureResponse_QNAME = new QName("http://service/", "updatePictureResponse");
+    private final static QName _FindPictures_QNAME = new QName("http://service/", "findPictures");
+    private final static QName _CreatePicture_QNAME = new QName("http://service/", "createPicture");
+    private final static QName _UpdatePicture_QNAME = new QName("http://service/", "updatePicture");
+    private final static QName _InvalidEntityException_QNAME = new QName("http://service/", "InvalidEntityException");
+    private final static QName _GetAllPictures_QNAME = new QName("http://service/", "getAllPictures");
+    private final static QName _AuthException_QNAME = new QName("http://service/", "AuthException");
+    private final static QName _DeletePicture_QNAME = new QName("http://service/", "deletePicture");
+    private final static QName _IllegalIdException_QNAME = new QName("http://service/", "IllegalIdException");
+    private final static QName _InsertingException_QNAME = new QName("http://service/", "InsertingException");
     private final static QName _MyRequest_QNAME = new QName("http://service.com", "MyRequest");
 
     /**
@@ -157,7 +157,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link GetAllPicturesResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://service.wstlabs.com/", name = "getAllPicturesResponse")
+    @XmlElementDecl(namespace = "http://service/", name = "getAllPicturesResponse")
     public JAXBElement<GetAllPicturesResponse> createGetAllPicturesResponse(GetAllPicturesResponse value) {
         return new JAXBElement<GetAllPicturesResponse>(_GetAllPicturesResponse_QNAME, GetAllPicturesResponse.class, null, value);
     }
@@ -166,7 +166,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link FindPicturesResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://service.wstlabs.com/", name = "findPicturesResponse")
+    @XmlElementDecl(namespace = "http://service/", name = "findPicturesResponse")
     public JAXBElement<FindPicturesResponse> createFindPicturesResponse(FindPicturesResponse value) {
         return new JAXBElement<FindPicturesResponse>(_FindPicturesResponse_QNAME, FindPicturesResponse.class, null, value);
     }
@@ -175,7 +175,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link PictureServiceFault }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://service.wstlabs.com/", name = "IllegalQException")
+    @XmlElementDecl(namespace = "http://service/", name = "IllegalQException")
     public JAXBElement<PictureServiceFault> createIllegalQException(PictureServiceFault value) {
         return new JAXBElement<PictureServiceFault>(_IllegalQException_QNAME, PictureServiceFault.class, null, value);
     }
@@ -184,7 +184,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link PictureServiceFault }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://service.wstlabs.com/", name = "InvalidCreatingParametersException")
+    @XmlElementDecl(namespace = "http://service/", name = "InvalidCreatingParametersException")
     public JAXBElement<PictureServiceFault> createInvalidCreatingParametersException(PictureServiceFault value) {
         return new JAXBElement<PictureServiceFault>(_InvalidCreatingParametersException_QNAME, PictureServiceFault.class, null, value);
     }
@@ -193,7 +193,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link CreatePictureResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://service.wstlabs.com/", name = "createPictureResponse")
+    @XmlElementDecl(namespace = "http://service/", name = "createPictureResponse")
     public JAXBElement<CreatePictureResponse> createCreatePictureResponse(CreatePictureResponse value) {
         return new JAXBElement<CreatePictureResponse>(_CreatePictureResponse_QNAME, CreatePictureResponse.class, null, value);
     }
@@ -202,7 +202,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link DeletePictureResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://service.wstlabs.com/", name = "deletePictureResponse")
+    @XmlElementDecl(namespace = "http://service/", name = "deletePictureResponse")
     public JAXBElement<DeletePictureResponse> createDeletePictureResponse(DeletePictureResponse value) {
         return new JAXBElement<DeletePictureResponse>(_DeletePictureResponse_QNAME, DeletePictureResponse.class, null, value);
     }
@@ -211,7 +211,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link UpdatePictureResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://service.wstlabs.com/", name = "updatePictureResponse")
+    @XmlElementDecl(namespace = "http://service/", name = "updatePictureResponse")
     public JAXBElement<UpdatePictureResponse> createUpdatePictureResponse(UpdatePictureResponse value) {
         return new JAXBElement<UpdatePictureResponse>(_UpdatePictureResponse_QNAME, UpdatePictureResponse.class, null, value);
     }
@@ -220,7 +220,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link FindPictures }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://service.wstlabs.com/", name = "findPictures")
+    @XmlElementDecl(namespace = "http://service/", name = "findPictures")
     public JAXBElement<FindPictures> createFindPictures(FindPictures value) {
         return new JAXBElement<FindPictures>(_FindPictures_QNAME, FindPictures.class, null, value);
     }
@@ -229,7 +229,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link CreatePicture }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://service.wstlabs.com/", name = "createPicture")
+    @XmlElementDecl(namespace = "http://service/", name = "createPicture")
     public JAXBElement<CreatePicture> createCreatePicture(CreatePicture value) {
         return new JAXBElement<CreatePicture>(_CreatePicture_QNAME, CreatePicture.class, null, value);
     }
@@ -238,7 +238,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link UpdatePicture }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://service.wstlabs.com/", name = "updatePicture")
+    @XmlElementDecl(namespace = "http://service/", name = "updatePicture")
     public JAXBElement<UpdatePicture> createUpdatePicture(UpdatePicture value) {
         return new JAXBElement<UpdatePicture>(_UpdatePicture_QNAME, UpdatePicture.class, null, value);
     }
@@ -247,7 +247,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link PictureServiceFault }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://service.wstlabs.com/", name = "InvalidEntityException")
+    @XmlElementDecl(namespace = "http://service/", name = "InvalidEntityException")
     public JAXBElement<PictureServiceFault> createInvalidEntityException(PictureServiceFault value) {
         return new JAXBElement<PictureServiceFault>(_InvalidEntityException_QNAME, PictureServiceFault.class, null, value);
     }
@@ -256,7 +256,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link GetAllPictures }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://service.wstlabs.com/", name = "getAllPictures")
+    @XmlElementDecl(namespace = "http://service/", name = "getAllPictures")
     public JAXBElement<GetAllPictures> createGetAllPictures(GetAllPictures value) {
         return new JAXBElement<GetAllPictures>(_GetAllPictures_QNAME, GetAllPictures.class, null, value);
     }
@@ -265,7 +265,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link PictureServiceFault }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://service.wstlabs.com/", name = "AuthException")
+    @XmlElementDecl(namespace = "http://service/", name = "AuthException")
     public JAXBElement<PictureServiceFault> createAuthException(PictureServiceFault value) {
         return new JAXBElement<PictureServiceFault>(_AuthException_QNAME, PictureServiceFault.class, null, value);
     }
@@ -274,7 +274,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link DeletePicture }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://service.wstlabs.com/", name = "deletePicture")
+    @XmlElementDecl(namespace = "http://service/", name = "deletePicture")
     public JAXBElement<DeletePicture> createDeletePicture(DeletePicture value) {
         return new JAXBElement<DeletePicture>(_DeletePicture_QNAME, DeletePicture.class, null, value);
     }
@@ -283,7 +283,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link PictureServiceFault }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://service.wstlabs.com/", name = "IllegalIdException")
+    @XmlElementDecl(namespace = "http://service/", name = "IllegalIdException")
     public JAXBElement<PictureServiceFault> createIllegalIdException(PictureServiceFault value) {
         return new JAXBElement<PictureServiceFault>(_IllegalIdException_QNAME, PictureServiceFault.class, null, value);
     }
@@ -292,7 +292,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link PictureServiceFault }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://service.wstlabs.com/", name = "InsertingException")
+    @XmlElementDecl(namespace = "http://service/", name = "InsertingException")
     public JAXBElement<PictureServiceFault> createInsertingException(PictureServiceFault value) {
         return new JAXBElement<PictureServiceFault>(_InsertingException_QNAME, PictureServiceFault.class, null, value);
     }

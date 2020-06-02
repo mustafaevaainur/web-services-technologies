@@ -1,7 +1,7 @@
 package service;
 
 import service.exceptions.*;
-import org.postgresql.util.Base64;
+import sun.misc.BASE64Decoder;
 
 import javax.annotation.Resource;
 import javax.jws.WebMethod;
@@ -156,7 +156,13 @@ public class PictureWebService {
         }
 
         authToken = authToken.replaceFirst(AUTH_HEADER_PREFIX, "");
-        String decodedString = new String(Base64.decode(authToken));
+        String decodedString = "";
+        try {
+            decodedString = new String(new BASE64Decoder().decodeBuffer(authToken));
+        }
+        catch(Exception ex) {
+            decodedString = "";
+        }
         StringTokenizer stringTokenizer = new StringTokenizer(decodedString, ":");
         String username = stringTokenizer.nextToken();
         String password = stringTokenizer.nextToken();

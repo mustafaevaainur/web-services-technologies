@@ -17,14 +17,14 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "PictureService", targetNamespace = "http://service.wstlabs.com/", wsdlLocation = "http://localhost:8080/PictureService?wsdl")
+@WebServiceClient(name = "PictureService", targetNamespace = "http://service/", wsdlLocation = "http://localhost:8080/PictureService?wsdl")
 public class PictureService
     extends Service
 {
 
     private final static URL PICTURESERVICE_WSDL_LOCATION;
     private final static WebServiceException PICTURESERVICE_EXCEPTION;
-    private final static QName PICTURESERVICE_QNAME = new QName("http://service.wstlabs.com/", "PictureService");
+    private final static QName PICTURESERVICE_QNAME = new QName("http://service/", "PictureService");
 
     static {
         URL url = null;
@@ -69,19 +69,19 @@ public class PictureService
      */
     @WebEndpoint(name = "PictureWebServicePort")
     public PictureWebService getPictureWebServicePort() {
-        return super.getPort(new QName("http://service.wstlabs.com/", "PictureWebServicePort"), PictureWebService.class);
+        return super.getPort(new QName("http://service/", "PictureWebServicePort"), PictureWebService.class);
     }
 
     /**
      * 
      * @param features
-     *     A list of {@link javax.xml.ws.WebServiceFeature} to configure on the proxy.  Supported features not in the <code>features</code> parameter will have their default values.
+     *     A list of {@link WebServiceFeature} to configure on the proxy.  Supported features not in the <code>features</code> parameter will have their default values.
      * @return
      *     returns PictureWebService
      */
     @WebEndpoint(name = "PictureWebServicePort")
     public PictureWebService getPictureWebServicePort(WebServiceFeature... features) {
-        return super.getPort(new QName("http://service.wstlabs.com/", "PictureWebServicePort"), PictureWebService.class, features);
+        return super.getPort(new QName("http://service/", "PictureWebServicePort"), PictureWebService.class, features);
     }
 
     private static URL __getWsdlLocation() {

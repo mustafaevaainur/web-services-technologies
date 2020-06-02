@@ -17,7 +17,7 @@ import javax.xml.ws.ResponseWrapper;
  * Generated source version: 2.2
  * 
  */
-@WebService(name = "PictureWebService", targetNamespace = "http://service.wstlabs.com/")
+@WebService(name = "PictureWebService", targetNamespace = "http://service/")
 @XmlSeeAlso({
     ObjectFactory.class
 })
@@ -40,21 +40,21 @@ public interface PictureWebService {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "createPicture", targetNamespace = "http://service.wstlabs.com/", className = "client.CreatePicture")
-    @ResponseWrapper(localName = "createPictureResponse", targetNamespace = "http://service.wstlabs.com/", className = "client.CreatePictureResponse")
+    @RequestWrapper(localName = "createPicture", targetNamespace = "http://service/", className = "client.CreatePicture")
+    @ResponseWrapper(localName = "createPictureResponse", targetNamespace = "http://service/", className = "client.CreatePictureResponse")
     public int createPicture(
-        @WebParam(name = "name", targetNamespace = "")
-        String name,
-        @WebParam(name = "author", targetNamespace = "")
-        String author,
-        @WebParam(name = "year", targetNamespace = "")
-        int year,
-        @WebParam(name = "material", targetNamespace = "")
-        String material,
-        @WebParam(name = "height", targetNamespace = "")
-        float height,
-        @WebParam(name = "width", targetNamespace = "")
-        float width)
+            @WebParam(name = "name", targetNamespace = "")
+                    String name,
+            @WebParam(name = "author", targetNamespace = "")
+                    String author,
+            @WebParam(name = "year", targetNamespace = "")
+                    int year,
+            @WebParam(name = "material", targetNamespace = "")
+                    String material,
+            @WebParam(name = "height", targetNamespace = "")
+                    float height,
+            @WebParam(name = "width", targetNamespace = "")
+                    float width)
         throws AuthException, InsertingException, InvalidCreatingParametersException
     ;
 
@@ -65,8 +65,8 @@ public interface PictureWebService {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "getAllPictures", targetNamespace = "http://service.wstlabs.com/", className = "client.GetAllPictures")
-    @ResponseWrapper(localName = "getAllPicturesResponse", targetNamespace = "http://service.wstlabs.com/", className = "client.GetAllPicturesResponse")
+    @RequestWrapper(localName = "getAllPictures", targetNamespace = "http://service/", className = "client.GetAllPictures")
+    @ResponseWrapper(localName = "getAllPicturesResponse", targetNamespace = "http://service/", className = "client.GetAllPicturesResponse")
     public List<Picture> getAllPictures();
 
     /**
@@ -78,11 +78,11 @@ public interface PictureWebService {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "findPictures", targetNamespace = "http://service.wstlabs.com/", className = "client.FindPictures")
-    @ResponseWrapper(localName = "findPicturesResponse", targetNamespace = "http://service.wstlabs.com/", className = "client.FindPicturesResponse")
+    @RequestWrapper(localName = "findPictures", targetNamespace = "http://service/", className = "client.FindPictures")
+    @ResponseWrapper(localName = "findPicturesResponse", targetNamespace = "http://service/", className = "client.FindPicturesResponse")
     public List<Picture> findPictures(
-        @WebParam(name = "q", targetNamespace = "")
-        MyRequest q)
+            @WebParam(name = "q", targetNamespace = "")
+                    MyRequest q)
         throws IllegalQException
     ;
 
@@ -97,11 +97,11 @@ public interface PictureWebService {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "deletePicture", targetNamespace = "http://service.wstlabs.com/", className = "client.DeletePicture")
-    @ResponseWrapper(localName = "deletePictureResponse", targetNamespace = "http://service.wstlabs.com/", className = "client.DeletePictureResponse")
+    @RequestWrapper(localName = "deletePicture", targetNamespace = "http://service/", className = "client.DeletePicture")
+    @ResponseWrapper(localName = "deletePictureResponse", targetNamespace = "http://service/", className = "client.DeletePictureResponse")
     public int deletePicture(
-        @WebParam(name = "id", targetNamespace = "")
-        int id)
+            @WebParam(name = "id", targetNamespace = "")
+                    int id)
         throws AuthException, IllegalIdException, InvalidEntityException
     ;
 
@@ -118,13 +118,13 @@ public interface PictureWebService {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "updatePicture", targetNamespace = "http://service.wstlabs.com/", className = "client.UpdatePicture")
-    @ResponseWrapper(localName = "updatePictureResponse", targetNamespace = "http://service.wstlabs.com/", className = "client.UpdatePictureResponse")
+    @RequestWrapper(localName = "updatePicture", targetNamespace = "http://service/", className = "client.UpdatePicture")
+    @ResponseWrapper(localName = "updatePictureResponse", targetNamespace = "http://service/", className = "client.UpdatePictureResponse")
     public int updatePicture(
-        @WebParam(name = "id", targetNamespace = "")
-        int id,
-        @WebParam(name = "q", targetNamespace = "")
-        MyRequest q)
+            @WebParam(name = "id", targetNamespace = "")
+                    int id,
+            @WebParam(name = "q", targetNamespace = "")
+                    MyRequest q)
         throws AuthException, IllegalIdException, IllegalQException, InvalidEntityException
     ;
 

@@ -10,7 +10,7 @@ import javax.xml.ws.WebFault;
  * Generated source version: 2.2
  * 
  */
-@WebFault(name = "IllegalQException", targetNamespace = "http://service.wstlabs.com/")
+@WebFault(name = "IllegalQException", targetNamespace = "http://service/")
 public class IllegalQException
     extends Exception
 {

@@ -1,6 +1,6 @@
 package client;
 
-import org.postgresql.util.Base64;
+import sun.misc.BASE64Encoder;
 
 import javax.xml.ws.BindingProvider;
 import javax.xml.ws.handler.MessageContext;
@@ -27,12 +27,13 @@ public class WebServiceClient {
         System.out.println();
     }
 
-    public static void main(String[] args) throws MalformedURLException {
-        String authToken = "Basic " + Base64.encodeBytes((USERNAME + ":" + PASSWORD).getBytes());
+    public static void main(String[] args) throws Exception {
+        String authToken = "Basic " + new BASE64Encoder().encode((USERNAME + ":" + PASSWORD).getBytes());
 
         URL url = new URL("http://localhost:8080/PictureService?wsdl");
-        PictureService pictureService = new PictureService(url);
-        PictureWebService pictureWebService = pictureService.getPictureWebServicePort();
+        MyServiceConnectionCache  pictureServiceConnectionCacheProb = MyServiceConnectionCache.getInstance();
+        PictureService conect = pictureServiceConnectionCacheProb.acquire();
+        PictureWebService pictureWebService = conect.getPictureWebServicePort();
 
         Map<String, List<String>> credentials = new HashMap<String, List<String>>();
         credentials.put("Authorization", Collections.singletonList(authToken));
@@ -262,5 +263,7 @@ public class WebServiceClient {
         System.out.println("Response: " + creatingPictureId);
         System.out.println();
         getStatus(pictureWebService);
+
+        pictureServiceConnectionCacheProb.release(conect);
     }
 }

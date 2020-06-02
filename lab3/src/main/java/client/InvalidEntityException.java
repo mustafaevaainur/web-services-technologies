@@ -10,7 +10,7 @@ import javax.xml.ws.WebFault;
  * Generated source version: 2.2
  * 
  */
-@WebFault(name = "InvalidEntityException", targetNamespace = "http://service.wstlabs.com/")
+@WebFault(name = "InvalidEntityException", targetNamespace = "http://service/")
 public class InvalidEntityException
     extends Exception
 {
